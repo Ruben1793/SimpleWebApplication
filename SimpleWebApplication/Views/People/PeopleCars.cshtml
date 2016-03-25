@@ -1,0 +1,13 @@
+﻿@model List<SimpleWebApplication.Models.Car>
+@{
+    Layout = null;
+}
+<div class="well">
+    <h2>Cars: @Model.Count</h2>
+    <ul>
+        @foreach (var car in Model)
+        {
+            <li>@car</li>
+        }
+    </ul>
+</div>
